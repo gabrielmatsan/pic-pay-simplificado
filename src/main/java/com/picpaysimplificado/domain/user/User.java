@@ -2,7 +2,7 @@ package com.picpaysimplificado.domain.user;
 
 import java.math.BigDecimal;
 
-import com.picpaysimplificado.dtos.UserDTO;
+import com.picpaysimplificado.dtos.user.UserDTO;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

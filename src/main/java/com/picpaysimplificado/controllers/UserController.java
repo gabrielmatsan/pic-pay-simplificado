@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.picpaysimplificado.domain.user.User;
-import com.picpaysimplificado.dtos.UserDTO;
+import com.picpaysimplificado.dtos.user.UserDTO;
 import com.picpaysimplificado.services.UserService;
 
 import io.swagger.v3.oas.annotations.Operation;
