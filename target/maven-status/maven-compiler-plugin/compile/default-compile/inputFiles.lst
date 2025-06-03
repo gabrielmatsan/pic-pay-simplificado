@@ -1,4 +1,5 @@
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/PicpaysimplificadoApplication.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/controllers/AuthController.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/controllers/UserController.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/domain/transaction/Transaction.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/domain/user/User.java
@@ -7,9 +8,13 @@
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/TransactionDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/UserDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/AppConfig.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/JwtConfig.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/SecurityConfig.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/SwaggerConfig.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/repositories/TransactionRepository.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/repositories/UserRepository.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/AuthService.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/JwtService.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/NotificationService.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/TransactionService.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/UserService.java
