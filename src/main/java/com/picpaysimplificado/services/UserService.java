@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.picpaysimplificado.domain.user.User;
 import com.picpaysimplificado.domain.user.UserType;
-import com.picpaysimplificado.dtos.UserDTO;
+import com.picpaysimplificado.dtos.user.UserDTO;
 import com.picpaysimplificado.repositories.UserRepository;
 
 @Service
@@ -16,6 +16,9 @@ public class UserService {
 
   @Autowired
   private UserRepository userRepository;
+
+  @Autowired
+  private AuthService authService;
 
   public void validateTransaction(User sender, BigDecimal amount) throws Exception {
 
@@ -52,6 +55,10 @@ public class UserService {
     if (newUser.getPassword() == null || newUser.getPassword().isBlank()) {
       throw new IllegalArgumentException("Password cannot be null or blank");
     }
+
+    String hashedPassword = authService.encodePassword(newUser.getPassword());
+
+    newUser.setPassword(hashedPassword);
 
     return userRepository.save(newUser);
   }
