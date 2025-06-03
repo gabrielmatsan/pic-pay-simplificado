@@ -53,7 +53,7 @@ public class UserService {
       throw new IllegalArgumentException("Password cannot be null or blank");
     }
 
-    return newUser;
+    return userRepository.save(newUser);
   }
 
   public List<User> getAllUsers() {

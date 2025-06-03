@@ -15,8 +15,14 @@ import com.picpaysimplificado.domain.user.User;
 import com.picpaysimplificado.dtos.UserDTO;
 import com.picpaysimplificado.services.UserService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController()
 @RequestMapping("/users")
+@Tag(name = "Users", description = "Operações relacionadas aos usuários")
 public class UserController {
 
   @Autowired
@@ -24,6 +30,12 @@ public class UserController {
 
   @SuppressWarnings("null")
   @PostMapping("/")
+  @Operation(summary = "Cria um novo usuário", description = "Cria um novo usuário no sistema com os dados fornecidos.")
+  @ApiResponses(value = {
+      @ApiResponse(responseCode = "201", description = "Usuário criado com sucesso"),
+      @ApiResponse(responseCode = "400", description = "Dados inválidos"),
+      @ApiResponse(responseCode = "409", description = "Usuário já existe")
+  })
   public ResponseEntity<User> createUser(@RequestBody UserDTO body) {
 
     try {
@@ -36,6 +48,11 @@ public class UserController {
   }
 
   @GetMapping("/")
+  @Operation(summary = "Buscar usuário", description = "Busca um usuário pelo ID")
+  @ApiResponses(value = {
+      @ApiResponse(responseCode = "200", description = "Usuário encontrado"),
+      @ApiResponse(responseCode = "404", description = "Usuário não encontrado")
+  })
   public ResponseEntity<List<User>> getAllUsers() {
 
     List<User> users = userService.getAllUsers();

@@ -4,7 +4,8 @@ import java.math.BigDecimal;
 
 import com.picpaysimplificado.domain.user.UserType;
 
-public record UserDTO(String firstName, String lastName, String cpf, String email, String password, BigDecimal amount,
+public record UserDTO(String id, String firstName, String lastName, String cpf, String email, String password,
+    BigDecimal amount,
     UserType userType) {
 
   public UserDTO {
