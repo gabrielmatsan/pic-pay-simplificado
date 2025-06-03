@@ -7,6 +7,7 @@
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/TransactionDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/UserDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/AppConfig.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/SwaggerConfig.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/repositories/TransactionRepository.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/repositories/UserRepository.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/NotificationService.java

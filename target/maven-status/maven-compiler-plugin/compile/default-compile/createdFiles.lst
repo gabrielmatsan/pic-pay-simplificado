@@ -6,6 +6,7 @@ com/picpaysimplificado/services/UserService.class
 com/picpaysimplificado/services/TransactionService.class
 com/picpaysimplificado/domain/transaction/Transaction.class
 com/picpaysimplificado/repositories/TransactionRepository.class
+com/picpaysimplificado/infra/SwaggerConfig.class
 com/picpaysimplificado/dtos/NotificationDTO.class
 com/picpaysimplificado/dtos/TransactionDTO.class
 com/picpaysimplificado/repositories/UserRepository.class
