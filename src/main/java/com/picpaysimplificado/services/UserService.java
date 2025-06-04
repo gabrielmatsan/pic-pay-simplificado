@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.picpaysimplificado.domain.user.User;
 import com.picpaysimplificado.domain.user.UserType;
+import com.picpaysimplificado.dtos.user.CreateUserDTO;
 import com.picpaysimplificado.dtos.user.UserDTO;
 import com.picpaysimplificado.repositories.UserRepository;
 
@@ -39,7 +40,7 @@ public class UserService {
     userRepository.save(user);
   }
 
-  public User createUser(UserDTO data) {
+  public User createUser(CreateUserDTO data) {
     User newUser = new User(data);
 
     // Validate the user data

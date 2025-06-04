@@ -26,7 +26,6 @@ public class SecurityConfig {
         .authorizeHttpRequests(auth -> auth
             // ✅ ROTAS LIVRES
             .requestMatchers("/auth/**").permitAll()
-            .requestMatchers("/users/**").permitAll()
 
             // ✅ SWAGGER/OPENAPI LIVRES
             .requestMatchers("/swagger-ui/**").permitAll()

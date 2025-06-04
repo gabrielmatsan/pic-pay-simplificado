@@ -6,7 +6,10 @@
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/domain/user/UserType.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/NotificationDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/TransactionDTO.java
-/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/UserDTO.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/auth/LoginRequest.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/user/CreateUserDTO.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/user/UserDTO.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/user/UserResponseDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/AppConfig.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/JwtConfig.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/SecurityConfig.java
@@ -14,6 +17,7 @@
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/repositories/TransactionRepository.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/repositories/UserRepository.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/AuthService.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/CookieService.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/JwtService.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/NotificationService.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/TransactionService.java
