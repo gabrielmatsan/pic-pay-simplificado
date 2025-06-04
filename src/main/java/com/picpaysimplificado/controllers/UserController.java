@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.picpaysimplificado.domain.user.User;
+import com.picpaysimplificado.dtos.user.CreateUserDTO;
 import com.picpaysimplificado.dtos.user.UserDTO;
 import com.picpaysimplificado.services.UserService;
 
@@ -36,7 +37,7 @@ public class UserController {
       @ApiResponse(responseCode = "400", description = "Dados inválidos"),
       @ApiResponse(responseCode = "409", description = "Usuário já existe")
   })
-  public ResponseEntity<User> createUser(@RequestBody UserDTO body) {
+  public ResponseEntity<User> createUser(@RequestBody CreateUserDTO body) {
 
     try {
       User newUser = userService.createUser(body);
