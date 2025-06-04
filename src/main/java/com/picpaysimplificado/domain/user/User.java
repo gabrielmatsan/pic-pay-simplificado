@@ -2,6 +2,7 @@ package com.picpaysimplificado.domain.user;
 
 import java.math.BigDecimal;
 
+import com.picpaysimplificado.dtos.user.CreateUserDTO;
 import com.picpaysimplificado.dtos.user.UserDTO;
 
 import jakarta.persistence.Column;
@@ -47,7 +48,7 @@ public class User {
   @Enumerated(EnumType.STRING)
   private UserType userType;
 
-  public User(UserDTO data) {
+  public User(CreateUserDTO data) {
     this.firstName = data.firstName();
     this.lastName = data.lastName();
     this.cpf = data.cpf();
