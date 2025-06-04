@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import com.picpaysimplificado.domain.user.User;
 import com.picpaysimplificado.domain.user.UserType;
 import com.picpaysimplificado.dtos.user.CreateUserDTO;
-import com.picpaysimplificado.dtos.user.UserDTO;
 import com.picpaysimplificado.repositories.UserRepository;
 
 @Service

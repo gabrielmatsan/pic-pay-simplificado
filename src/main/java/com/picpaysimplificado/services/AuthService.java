@@ -1,8 +1,5 @@
 package com.picpaysimplificado.services;
 
-import java.net.CookieStore;
-import java.util.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -23,12 +20,6 @@ public class AuthService {
 
   @Autowired
   private PasswordEncoder passwordEncoder;
-
-  @Autowired
-  private CookieService cookieService;
-
-  @Autowired
-  private JwtService jwtService;
 
   public boolean validatePassword(String rawPassword, String encodedPassword) {
     return passwordEncoder.matches(rawPassword, encodedPassword);
