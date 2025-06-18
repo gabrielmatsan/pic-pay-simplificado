@@ -27,9 +27,23 @@ public class TransactionService {
   private TransactionRepository transactionRepository;
 
   @Autowired
+  private NotificationService notificationService;
+
+  @Autowired
   private UserRepository userRepository;
 
-  public void createTransaction(TransactionDTO transaction) throws Exception {
+  public Transaction createTransaction(TransactionDTO transaction) throws Exception {
+
+    User isReceiverExists = this.userService.findUserById(transaction.receiverId());
+
+    if (isReceiverExists == null) {
+      throw new Exception("Receiver not found with id: " + transaction.receiverId());
+    }
+
+    if (transaction.value().compareTo(BigDecimal.ZERO) <= 0) {
+      throw new Exception("Transaction value must be greater than zero");
+    }
+
     User sender = this.userService.findUserById(transaction.senderId());
 
     User receiver = this.userService.findUserById(transaction.receiverId());
@@ -53,6 +67,11 @@ public class TransactionService {
     this.transactionRepository.save(newTransaction);
     this.userRepository.save(sender);
     this.userRepository.save(receiver);
+
+    this.notificationService.sendNotification(sender, "Transaction sent");
+    this.notificationService.sendNotification(receiver, "Transaction received");
+
+    return newTransaction;
   }
 
   public boolean isAuthorizedTransaction(User sender, BigDecimal value) {

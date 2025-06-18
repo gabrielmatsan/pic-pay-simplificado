@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.picpaysimplificado.annotations.AuthenticatedUser;
 import com.picpaysimplificado.domain.user.User;
 import com.picpaysimplificado.dtos.user.CreateUserDTO;
-import com.picpaysimplificado.dtos.user.UserDTO;
 import com.picpaysimplificado.services.UserService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -37,9 +37,15 @@ public class UserController {
       @ApiResponse(responseCode = "400", description = "Dados inválidos"),
       @ApiResponse(responseCode = "409", description = "Usuário já existe")
   })
-  public ResponseEntity<User> createUser(@RequestBody CreateUserDTO body) {
+  public ResponseEntity<User> createUser(@RequestBody CreateUserDTO body, @AuthenticatedUser User user) {
 
     try {
+
+      if (user == null) {
+        System.out.println("entrou");
+        return new ResponseEntity<>(null, HttpStatus.UNAUTHORIZED);
+      }
+
       User newUser = userService.createUser(body);
 
       return new ResponseEntity<>(newUser, HttpStatus.CREATED);

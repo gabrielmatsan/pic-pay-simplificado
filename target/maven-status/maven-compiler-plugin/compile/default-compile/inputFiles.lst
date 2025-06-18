@@ -1,12 +1,14 @@
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/PicpaysimplificadoApplication.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/controllers/AuthController.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/controllers/TransactionController.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/controllers/UserController.java
-/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/domain/transaction/Transaction.java
-/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/domain/user/User.java
-/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/domain/user/UserType.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/NotificationDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/TransactionDTO.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/TransactionRequestDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/auth/LoginRequest.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/domain/transaction/Transaction.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/domain/user/User.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/domain/user/UserType.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/user/CreateUserDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/user/UserDTO.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/dtos/user/UserResponseDTO.java
@@ -16,6 +18,7 @@
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/infra/SwaggerConfig.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/repositories/TransactionRepository.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/repositories/UserRepository.java
+/Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/resolvers/AuthenticatedUserResolver.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/AuthService.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/CookieService.java
 /Users/gabrielsantos/Downloads/picpaysimplificado/src/main/java/com/picpaysimplificado/services/JwtService.java

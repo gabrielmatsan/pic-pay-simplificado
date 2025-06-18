@@ -34,7 +34,7 @@ public class CookieService {
   public String getJwtFromCookie(HttpServletRequest request) {
     if (request.getCookies() != null) {
       for (Cookie cookie : request.getCookies()) {
-        if ("JWT_TOKEN".equals(cookie.getName())) {
+        if ("picpay-gabriel".equals(cookie.getName())) {
           return cookie.getValue();
         }
       }
